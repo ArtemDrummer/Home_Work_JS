@@ -1,0 +1,96 @@
+/*Задание №1 (Parallax) */
+/*body{
+  margin: 0;
+  padding: 0;
+}
+.box1{
+  height: 100vh;
+  width: 100%;
+  background-image: url(img/pict1.jpg);
+  background-size: cover;
+  display: table;
+  background-attachment: fixed;
+}
+.box2{
+  height: 100vh;
+  width: 100%;
+  background-image: url(img/pict2.jpg);
+  background-size: cover;
+  display: table; 
+  background-attachment: fixed;
+}
+.box3{
+  height: 100vh;
+  width: 100%;
+  background-image: url(img/pict3.jpg);
+  background-size: cover;
+  display: table;
+  background-attachment: fixed;
+}
+h1{
+  font-family: arial black;
+  font-size: 50px;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+  display: table-cell;
+  vertical-align: top; 
+}*/
+
+
+/*Задание №2 (Slider) */
+.slides {
+    height:400px;
+    margin:50px auto;
+    overflow:hidden;
+    position:relative;
+    width:900px;
+}
+.slides ul {
+    list-style:none;
+    position:relative;
+}
+@-webkit-keyframes anim_slides {
+    0% {
+        opacity:0;
+    }
+    6% {
+        opacity:1;
+    }
+    24% {
+        opacity:1;
+    }
+    30% {
+        opacity:0;
+
+    }
+    100% {
+        opacity:0;
+    }
+}
+.slides ul li {
+    opacity:0;
+    position:absolute;
+    top:0;
+    animation-name: anim_slides;
+    animation-duration: 24.0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-delay: 0;
+    animation-play-state: running;
+    animation-fill-mode: forwards;
+}
+.slides ul  li:nth-child(2), .slides ul  li:nth-child(2) div {
+    animation-delay: 6.0s;
+}
+.slides ul  li:nth-child(3), .slides ul  li:nth-child(3) div {
+    animation-delay: 12.0s;
+}
+.slides ul  li:nth-child(4), .slides ul  li:nth-child(4) div {
+    animation-delay: 18.0s;
+}
+.slides ul li img {
+    display:block;
+}
