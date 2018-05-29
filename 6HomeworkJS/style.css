@@ -1,0 +1,33 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+input{
+  margin: 10px;
+  padding: 0;
+  display: inline-block;
+}
+.table{
+    width: 600px;
+	height: auto;
+	border: 1px solid #000;
+    border-collapse: collapse;
+    margin: 10px auto;
+	
+	
+}
+.table>tbody>tr{
+    height: 40px;
+	border: 1px solid #000;
+	
+}
+.table>tbody>tr>td{
+	border: 1px solid #000;
+    width: 33%;
+}
+.add-row{
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
